@@ -1,0 +1,13 @@
+node_modules
+.vscode
+.env
+dist
+
+
+
+# Archivos de logs y errores
+*.log
+npm-debug.log*
+
+# Archivos del sistema operativo
+Thumbs.db      # (Si usas Windows)

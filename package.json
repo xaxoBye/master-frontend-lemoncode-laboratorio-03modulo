@@ -1,0 +1,22 @@
+{
+  "name": "03-bundling-github",
+  "version": "1.0.0",
+  "description": "Laboratorio de bundling",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 1234 --host"
+  },
+  "keywords": [],
+  "author": "Xaxo",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-visualizer": "^6.0.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-checker": "^0.12.0",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}

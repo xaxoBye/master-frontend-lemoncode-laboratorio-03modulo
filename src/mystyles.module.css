@@ -1,0 +1,19 @@
+.title {
+    color: red;
+    border: 1px solid blue;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.comando {
+    background-color: #2d2d2d;
+    color: #50fa7b;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    list-style-type: none;
+    margin-bottom: 5px;
+    border-left: 4px solid #8be9fd;
+}

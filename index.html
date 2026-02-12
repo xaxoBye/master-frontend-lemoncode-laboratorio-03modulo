@@ -1,0 +1,56 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio de bundling</title>
+    <link rel="icon" href="data:;base64"> <!-- Para que no se vea el error del fabicon en la consola -->
+</head>
+
+<body>
+    <h2>Profesores</h2>
+    <ul>
+        <li>Javier Calzado</li>
+        <li>Santiago Camargo</li>
+    </ul>
+
+    <p><strong>Montar una semilla de proyecto con _vite_ que:</strong></p>
+    <ul>
+        <li>✅ Esté configurado con TypeScript y que permita detectar errores de tipos en la terminal si los hubiera</li>
+        <li>✅ Se pueda ver el tamaño del bundle</li>
+        <li>✅ Tenga los scripts básicos de desarrollo local
+            <ul>
+                <li class="comando-msdos"> `start` para levantar el servidor de desarrollo</li>
+                <li class="comando-msdos"> `build` para compilar el proyecto y generar bundle de producción.</li>
+                <li class="comando-msdos"> `preview` para previsualizar el bundle de producción.</li>
+            </ul>
+        </li>
+        <li>✅ Tenga variables de entorno. Crea un setup de modo que las variables puedan tener un valor para desarrollo
+            y
+            otro distinto para producción. Utiliza un `console.log` para mostrar su valor por consola, de manera que en
+            desarrollo local (`npm start`) muestre un valor, pero al levantar la build (`npm run preview`) su valor sea
+            específico para producción.
+        </li>
+        <li>✅ Crea un elemento &lt;h1&gt; con texto, utilizando la API del DOM, y dale estilos con CSSModules</li>
+    </ul>
+    <p><strong>Opcional</strong>
+        <br />
+        ✅ Añade la configuración necesaria para que al hacer la build también genere los ficheros de forma comprimida
+        (GZIP y BROTLI), por lo que al hacer la build deberán existir los ficheros `dist/index-<hash>.js.gz` y un
+            `dist/index-<hash>.js.br`.
+    </p>
+
+    <p class="red-background"><strong>.env</strong><br>
+        Las variables del fichero <strong>.env</strong> han de empezar por <strong>VITE_</strong>
+    </p>
+    <p class="red-background">Desde html statico se puede acceder a la variable de entorno con el símbolo
+        <strong>%nombre
+            variable%</strong> <br />
+        Feature A enabled? %VITE_IS_FEATURE_A_ENABLED%</p>
+
+    <script type="module" src="./src/index.js"></script>
+
+
+</body>
+
+</html>
